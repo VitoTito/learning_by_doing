@@ -7,7 +7,18 @@
 
     </head>
     <body>
-        <h1> Title of level 1 heading </h1>
+        <header style="background-color: mediumpurple;">
+            <h1> Welcome to My Page </h1>
+            <a href=""> Home </a>
+            <a href=""> About us </a>
+            <a href=""> Products </a>
+            <a href=""> Contact Us </a>
+            <hr>
+        </header>
+
+        <main>
+
+
         <h2> Title of level 2 heading </h2>
         <h3> Title of level 3 heading </h3>
         <hr> <!-- horizontal line -->
@@ -164,12 +175,72 @@
 
         <br> <br> <!-- line break x2 -->
 
-        <form action="https://www.google.com/search" method="POST" target="_blank">
+        <form action="index.php" method="POST" enctype="multipart/form-data"> 
             
             <label for="username"> username </label>
-            <input type="text" id="username" placeholder="Search on Google"> <!-- input tag with attributes -->
+            <input type="text" id="username" minlength="6" maxlength="15" required placeholder="Search on Google"> <!-- input tag with attributes -->
+            
+            <br>
+            <label for="password"> password </label>
+            <input type="password" id="password" placeholder="Your Password" minlength="6" maxlength="64" required> <!-- password field -->
+
+            <br>
+            <label for="email"> email </label>
+            <input type="email" id="email" placeholder="test@email.com" required> <!-- email field -->
+
+            <br>
+            <label for="phone"> phone# </label>
+            <input type="phone" id="phone" placeholder="Phone Number" pattern="[0-9]{10}">
+
+            <br>
+            <label for="bday"> birthdate </label>
+            <input type="date" id="bday">
+
+            <br>
+            <label for="quantity"> quantity </label>
+            <input type="number" id="quantity" min="0" max="100" step="1" value="10">
+
+            <br>
+            <label for="Mr."> Mr. </label>
+            <input type="radio" id="Mr." value="Mr." name="title"> <!-- radio button -->
+            <label for="Ms."> Ms. </label>
+            <input type="radio" id="Ms." value="Ms." name="title">
+            <label for="PhD."> PhD. </label>
+            <input type="radio" id="PhD." value="PhD." name="title">
+
+            <br>
+            <label for="payment"> payment </label>
+            <select>
+                <option value="creditcard"> Credit Card </option>
+                <option value="paypal"> PayPal </option>
+                <option value="visa"> Visa </option>
+            </select>
+            
+            <br>
+            <label for ="subscribe"> subscribe </label>
+            <input type="checkbox" id="subscribe" checked> <!-- checkbox -->
+
+            <br>
+            <label for ="comment"> comment </label>
+            <textarea id="comment" rows="2" cols="50" placeholder="Your comment just here..."></textarea>
+
+            <br>
+            <label for ="file"> file </label>
+            <input type="file" id="file" accept="jpg, pdf"> <!-- file upload -->
+
+
+            <br>
+            <input type="reset" value="Reset"><br>
             <input type="submit" value="Fullfill"> <!-- submit button -->
         </form>
 
+        </main>
+
+        <footer style="background-color: mediumpurple;">
+            <hr>
+            author: Forever <br>
+            &copy; copyright 2025 All rights reserved.
+            <small><a href="mailto:test@email.com"> Contact Us </a></small>
+        </footer>
     </body>
 </html> <!-- / = ending tag -->

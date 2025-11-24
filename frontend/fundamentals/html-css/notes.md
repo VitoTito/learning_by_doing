@@ -8,13 +8,16 @@
 
 `index.html` : generally the main page
 
-## Main tags of HTML
+## Main elements of HTML
 
 - `<html> </html>` : root element of an HTML page. All is inside !
 - `<head> </head>` : information about the web page
 - `<title> </title>` : title of the web page
 - `<link rel="icon" type="image/jpg" href="favicon.jpg">` : icon of the website
 - `<body> </body>` : visible content of the web page
+- `<header> </header>` : top section of the page or a section, usually logo, navigation menu, and introductory content
+- `<main> </main>` : primary content of the page : unique and directly related to the main purpose of the webpage
+- `<footer> </footer>` : bottom section of the page, usually  copyright info, contact links, social media, or secondary navigation
 - `<h1> </h1>` : title of level 1 (h2 = title of level 2, h3 = title of level 3...)
 - `<p> </p>` : paragraph
 - `<pre> </pre>` : paragraph but retain any line breaks/spaces
@@ -52,4 +55,9 @@
 - `<table> <tr> <th> header </th> </tr> <tr> <td> data </td> </tr> </table>` : creating a table with rows (tr = table rows), headers (th = table headers) and cells (td = table data)
 - `<button> </button>` : creates a clickable button element
 - `<script> </script>` : defines a block of JavaScript code to add interactivity or manipulate the page
-- `<form> </form>` :: creating a form
+- `<form> </form>` : creating a form
+- `<label> </label>` : for form : label associated to a text field
+- `<input> </input>` : for form : interactive field in a form
+
+
+## Main elements of CSS
