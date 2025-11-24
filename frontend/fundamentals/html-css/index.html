@@ -1,0 +1,175 @@
+<!DOCTYPE html> <!-- declaration of HTML file -->
+<html> <!-- most tags are in group of pairs -->
+    <head>
+        <title> Test Of Web Page </title>
+
+        <link rel="icon" type="image/jpg" href="assets/favicon.jpg">
+
+    </head>
+    <body>
+        <h1> Title of level 1 heading </h1>
+        <h2> Title of level 2 heading </h2>
+        <h3> Title of level 3 heading </h3>
+        <hr> <!-- horizontal line -->
+        <br> <!-- line break -->
+        <p> <!-- paragraph -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos dolor maxime, architecto iusto earum velit, hic voluptatum ipsam veritatis aperiam, voluptates eos corrupti doloremque pariatur reiciendis eligendi suscipit necessitatibus?
+        </p>
+
+        This is a for <a href="https://google.com" target="_blank" title="Goes to Google"> <!-- href is an attribute -->
+             Google link
+        </a>
+
+        <br> <!-- line break -->
+
+        This is a hyperlink for a <a href="assets/costume.png" target="_blank"> <!-- href is an attribute -->
+            photo of SRK
+        </a> BUT showing it in another window
+
+        <br> <!-- line break -->
+
+                This is a hyperlink for <a href="other.html"> <!-- href is an attribute -->
+            another page
+        </a>
+
+        <br> <!-- line break -->
+
+        <a href="mailto:test@fake.com"> Email Me !</a>
+
+        <br> <!-- line break -->
+
+        <a href="https://google.com"> <!-- the image is an hyperlink-->
+            <img src="assets/costume.png"
+            height = "200px"
+            width="" 
+            alt="Costume Image of SRK"> <!-- image tag with attributes :
+            height : hauteur, pixels
+            width : adjust automatically if not referenced 
+            alt : alternative text if the image cannot be displayed : 
+            good practice to put it (reading version...)-->
+        </a>
+
+        <br> <!-- line break -->
+
+        <p> Maltese - Shake Down </p>
+        <audio controls muted loop> <!-- controls = to be play 
+        muted = muted when the page is launched
+        loop = looped when finished -->
+            <source src="assets/maltese.mp3" type="audio/mpeg"> 
+            <!-- source tag with type attribute -->:
+        </audio>
+
+        <br> <!-- line break -->
+
+        <a href="https://google.com">
+            <video width="440" controls>
+                <source src="assets/emile.mp4" type="video/mp4">
+                <!-- <source src="assets/emile.webm" type="video/webm"> : played if the first cannot --> 
+            </video>
+        </a>
+
+        <p> This is normal text </p>
+        <p> This is <b>bold</b> text </p>
+        <p> This is <i>italic</i> text </p>
+        <p> This is <u>underlined</u> text </p>
+        <p> This is <del>deleted</del> text </p>
+        <p> This is <big>big</big> text </p>
+        <p> This is <small>small</small> text </p>
+        <p> This is <subscript>subscript</subscript> text </p>
+        <p> This is <sup>superscript</sup> text </p>
+        <p> This is <tt>monospaced</tt> text </p>
+        <p> This is <mark style="background-color: lightgreen">mark</mark> text </p>   
+
+        <br> <br> <!-- line break x2 -->
+
+        <h1><span style = "background-color: tomato;"> H1 span first </span></h1> <!-- inline container -->
+        <h1> <div style = "background-color: cyan;"> H1 div second </div> </h1>
+    
+        <p> <span style = "background-color: rgb(130, 255, 130);">This is a span sentence </span></p>
+        <p> <div style = "background-color: yellow;">This is a div sentence </div></p>
+    
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style = "background-color: rgb(130, 255, 130);">Earum, sit non. Rerum harum ducimus praesentium illum rem at. Beatae voluptas autem impedit assumenda dignissimos eaque vitae quam deleniti a excepturi?</span></p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <div style = "background-color: rgb(186, 190, 190);">Earum, sit non. Rerum harum ducimus praesentium illum rem at. Beatae voluptas autem impedit assumenda dignissimos eaque vitae quam deleniti a excepturi?</div></p>
+        
+        <h1> Ordered list</h1>
+
+        <ol>
+            <li>Bread</li>
+            <li>Brioche</li>
+            <li>Bagel</li>
+        </ol>
+
+        <h1> Unordered list</h1>
+        
+        <ul>
+            <li>Bread</li>
+            <li>Brioche</li>
+            <li>Bagel</li>
+        </ul>
+
+        <h1> Description list</h1>
+        
+        <dl style="background-color: lightcyan; border:2px solid">
+            <dt>Bread</dt>
+            <dd>Basic dough.</dd>
+
+            <dt>Brioche</dt>
+            <dd>Sweet buttery dough.</dd>
+
+            <dt>Pita</dt>
+            <dd>Thin round bread.</dd>
+        </dl>
+
+        <h3> Store Rankings </h3>
+
+        <table border="2" style="border-collapse: collapse; background-color: white;">
+            <tr align="center" style="background-color: darkcyan;"> <!-- table row -->
+                <th width = "100"> Rank </th> <!-- table header -->
+                <th> LP needed </th>
+            </tr>
+            <tr>
+                <td> Bronze </td> <!-- table data -->
+                <td> 0 LP </td>
+            </tr>
+            <tr>
+                <td> Silver </td>
+                <td> 100 LP </td>
+            </tr>
+            <tr>
+                <td> Gold </td>
+                <td> 200 LP </td>
+            </tr>
+            <tr>
+                <td> Platinum </td>
+                <td> 300 LP </td>
+            </tr>
+            <tr>
+                <td> Diamond </td>
+                <td> 400 LP </td>
+            </tr>
+            <tr>
+                <td> Master </td>
+                <td> 500 LP </td>
+            </tr>
+            <tr>
+                <td> Challenger </td>
+                <td> 600 LP </td>
+            </tr>
+        </table>
+
+        <br> 
+        <a href="https://www.youtube.com/watch?v=VtwyR5j_k40&list=RDVtwyR5j_k40&start_radio=1">
+            <button style="font-size: 25px; background-color: grey; color:lightblue; border-radius: 25px;"> Click on Me</button>
+        </a>
+
+        <br> <br> <!-- line break x2 -->
+
+        <form action="https://www.google.com/search" method="POST" target="_blank">
+            
+            <label for="username"> username </label>
+            <input type="text" id="username" placeholder="Search on Google"> <!-- input tag with attributes -->
+            <input type="submit" value="Fullfill"> <!-- submit button -->
+        </form>
+
+    </body>
+</html> <!-- / = ending tag -->
