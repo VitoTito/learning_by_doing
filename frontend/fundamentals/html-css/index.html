@@ -2,10 +2,21 @@
 <html> <!-- most tags are in group of pairs -->
     <head>
         <title> Test Of Web Page </title>
+        <link rel="icon" type="image/jpg" href="assets/favicon.jpg"> <!-- icon of the website -->
+        <link rel="stylesheet" href="style.css"> <!-- external CSS file -->
 
-        <link rel="icon" type="image/jpg" href="assets/favicon.jpg">
+        <style>
+            body {
+                /* font-family: Verdana, sans-serif; set default font for the page */
+                margin: 20px; /* add margin around the content */
+            }
+            h1 {
+                color: rgb(0, 0, 121); /* set color for h1 headings */
+            }
+        </style>
 
     </head>
+
     <body>
         <header style="background-color: mediumpurple;">
             <h1> Welcome to My Page </h1>
@@ -19,11 +30,11 @@
         <main>
 
 
-        <h2> Title of level 2 heading </h2>
+        <h2 style="background-color: aqua;"> Title of level 2 heading </h2>
         <h3> Title of level 3 heading </h3>
         <hr> <!-- horizontal line -->
         <br> <!-- line break -->
-        <p> <!-- paragraph -->
+        <p id="pi" class="odd"> <!-- paragraph -->
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quos dolor maxime, architecto iusto earum velit, hic voluptatum ipsam veritatis aperiam, voluptates eos corrupti doloremque pariatur reiciendis eligendi suscipit necessitatibus?
         </p>
 
@@ -234,6 +245,62 @@
             <input type="submit" value="Fullfill"> <!-- submit button -->
         </form>
 
+        <br>
+
+        <p id = pi1> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aliquid ducimus, commodi cum tempore beatae quod culpa laudantium obcaecati, fugit error eveniet. Sit sunt impedit tenetur esse voluptas nihil excepturi.</p>
+        <p id = pi2> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aliquid ducimus, commodi cum tempore beatae quod culpa laudantium obcaecati, fugit error eveniet. Sit sunt impedit tenetur esse voluptas nihil excepturi.</p>
+        <p id = pi3> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aliquid ducimus, commodi cum tempore beatae quod culpa laudantium obcaecati, fugit error eveniet. Sit sunt impedit tenetur esse voluptas nihil excepturi.</p>
+        <p id = pi4> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aliquid ducimus, commodi cum tempore beatae quod culpa laudantium obcaecati, fugit error eveniet. Sit sunt impedit tenetur esse voluptas nihil excepturi.</p>
+
+        <br> <!-- line break -->
+
+
+
+        <p id="test_border"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. </p>
+        <p id="test_borders"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. </p>
+        
+        <br> <!-- line break -->
+
+        <h2> Another learning path with H2 </h2>
+
+        <div id="boxfirst"> Test of Box </div>
+
+        <br> <!-- line break -->
+
+        <div id="boxsecond"> Test of Box 2</div>
+        
+        <br> <!-- line break -->
+
+        <div id="test_margin">Box 1</div>
+        <div id="test_margin2">Box 2</div>
+
+        <br>
+
+        <img src="assets/costume.png" alt="Costume Image of SRK" width=110px id="img1">   
+
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat perferendis numquam similique sapiente obcaecati illo ratione provident at dolores impedit praesentium maxime possimus deserunt sit voluptatibus, doloribus illum aliquid. Nam!</p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat perferendis numquam similique sapiente obcaecati illo ratione provident at dolores impedit praesentium maxime possimus deserunt sit voluptatibus, doloribus illum aliquid. Nam!</p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat perferendis numquam similique sapiente obcaecati illo ratione provident at dolores impedit praesentium maxime possimus deserunt sit voluptatibus, doloribus illum aliquid. Nam!</p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat perferendis numquam similique sapiente obcaecati illo ratione provident at dolores impedit praesentium maxime possimus deserunt sit voluptatibus, doloribus illum aliquid. Nam!</p>
+        
+        <br> <br> <br> <!-- line break -->
+        <img src="assets/bliss.jpg" alt="Bliss" width=300px id="img2" >
+
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat perferendis numquam similique sapiente obcaecati illo ratione provident at dolores impedit praesentium maxime possimus deserunt sit voluptatibus, doloribus illum aliquid. Nam!</p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat perferendis numquam similique sapiente obcaecati illo ratione provident at dolores impedit praesentium maxime possimus deserunt sit voluptatibus, doloribus illum aliquid. Nam!</p>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat perferendis numquam similique sapiente obcaecati illo ratione provident at dolores impedit praesentium maxime possimus deserunt sit voluptatibus, doloribus illum aliquid. Nam!</p>
+                
+        <br> <br> <!-- line break -->
+
+        <div id="overflow_test""> 
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ullam, debitis corrupti facere fugit temporibus doloribus nostrum rerum beatae nemo dolores iusto maxime blanditiis quas vitae, harum qui voluptate alias.</p>
+        </div>
+
+        <br> <br> <!-- line break -->
+
+        <div id="test_div_div"> div </div>
+        <span id="test_span_span"> span </span>
+
         </main>
 
         <footer style="background-color: mediumpurple;">
@@ -242,5 +309,6 @@
             &copy; copyright 2025 All rights reserved.
             <small><a href="mailto:test@email.com"> Contact Us </a></small>
         </footer>
+
     </body>
 </html> <!-- / = ending tag -->

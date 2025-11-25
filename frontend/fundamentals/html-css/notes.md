@@ -61,3 +61,96 @@
 
 
 ## Main elements of CSS
+
+3 differents way to apply it :
+1. **Inline** : directly on an HTML element using the `style` attribute
+2. **Internal** : inside the `style` tag in the `<head>` of the document
+3. **External** : written in a separate .css file and linked via `<link>` in the `<head>`
+
+**Selectors**:
+1. *Element selector* : `p{}` target all `<p>` tags for instance
+2. *Class selector* : `.className{}` target elements with `class="className"` and **can be used on several elements**
+3. *ID selector* : `#idName{}` target element with `id="idName"` and must be **unique in the page**
+4. *Group selector* :  `h1, h2, h3{}` apply same style to multiple elements
+5. *Descendant / child / pseudo-class selectors :* : `div p{}` apply to p in div elements
+
+**Properties**
+
+- **Text / font**:
+  - `color` : text color
+  - `font-family` : font type (often 3-4 defined, fallbacks in case if)
+  - `font-size` : size of the text
+  - `font-weight` : bold, normal, etc.
+  - `text-decoration` : underline, line-through, none
+  - `line-height` : space between lines
+
+- **Box model**:
+  - `margin` : space outside the element
+  - `padding` : space inside the element
+  - `border` : border around the element
+  - `width` / `height` : dimensions of the element
+  - `box-sizing` : content-box / border-box
+
+- **Backgrounds**:
+  - `background-color`
+  - `background-image`
+  - `background-size`
+  - `background-position`
+  - `background-repeat`
+
+- **Display & layout**:
+  - `display` : block, inline, inline-block, flex, grid, none
+
+1. **block**  
+    - The element takes the **full width** available.  
+    - Always starts on a **new line**.  
+    - You can set `width`, `height`, `margin`, `padding`, etc.  
+    - Example elements: `<div>`, `<p>`, `<h1>`, `<section>`  
+
+2. **inline**  
+    - The element **does not start on a new line**.  
+    - Takes **only the width of its content**.  
+    - Cannot set `width` or `height`.  
+    - Example elements: `<span>`, `<a>`, `<strong>`  
+
+3. **inline-block**  
+    - Behaves like **inline** (stays in line)  
+    - But allows setting `width`, `height`, `margin`, `padding`  
+    - Great for creating small blocks in a line  
+
+4. **none**  
+    - The element is **completely hidden**  
+    - It **occupies no space** in the layout  
+    - Different from `visibility: hidden`, which keeps the space  
+
+5. **flex**  
+    - Activates **Flexbox layout** for the element  
+    - Allows easy alignment, spacing, and responsive layouts  
+    - Child elements become flex items  
+
+6. **grid**  
+    - Activates **CSS Grid layout** for the element  
+    - Allows complex grids with rows and columns  
+    - Very powerful for full-page or component layouts  
+
+
+  - `position` : static, relative, absolute, fixed, sticky
+  - `top`, `right`, `bottom`, `left` : coordinates for positioned elements
+  - `z-index` : layer order
+  - `float` : allows elements to float left or right (old layout method)
+  - `overflow` : controls what happens when content exceeds its box (visible, hidden, clip, scroll, auto)
+
+- **Flexbox / Grid**:
+  - `display: flex` / `display: grid` : 
+  - `justify-content`, `align-items`
+  - `flex-direction`, `flex-wrap`
+  - `grid-template-columns`, `grid-template-rows`
+
+- **Other effects / visual**:
+  - `opacity` : transparency
+  - `text-shadow` : shadow around text
+  - `box-shadow` : shadow around elements
+  - `border-radius` : rounded corners
+  - `transform` : rotate, scale, translate
+  - `transition` : smooth changes
+  - `animation` : keyframe animations

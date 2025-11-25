@@ -1,0 +1,124 @@
+@font-face {
+    src: url(fonts/Kedebideri-Regular.ttf); /* specify the font file location */
+    font-family: "Kedebideri"; /* assign a name to the font */
+}
+
+body{  
+    font-family:"Kedebideri", sans-serif; /* set default font for the page */
+    background-color: slategray; /* set background color for the page */
+    border: 3px solid black; /* add a solid black border with 3px thickness */
+    display: flow-root; /* establish a new block formatting context */
+}
+
+#pi{
+    color: blue; /* set text color to blue */
+    font-size: 20px; /* set font size to 20 pixels */
+    font-weight: bold; /* make text bold */
+}
+
+.odd{
+    background-color: rgb(224, 69, 69); /* set background color for odd paragraphs */
+}
+
+#pi1{
+    color: blue; /* set text color to blue */
+    font-size: 20px; /* set font size to 20 pixels */
+    font-weight: bold; /* make text bold */
+}
+
+#pi2{
+    color: red; /* set text color to red */
+    font-size: 25px; /* set font size to 25 pixels */
+    font-weight: bold; /* make text bold */
+}
+
+#pi3{
+    color: rgb(3, 114, 3); /* set text color to green */
+    font-size: 30px; /* set font size to 30 pixels */
+    font-weight: bold; /* make text bold */
+}
+
+#pi4{
+    color: rgb(255, 255, 53); /* set text color to yellow */
+    font-size: 35px; /* set font size to 35 pixels */
+    font-weight: bold; /* make text bold */
+}
+
+#test_border{
+    border: 5px solid rgb(107, 0, 156); /* add a solid black border with 5px thickness */
+    border-radius: 10px;
+}
+
+#test_borders{
+    border-bottom: 7px solid rgb(255, 0, 0); /* add a solid black border at the bottom with 7px thickness */
+    border-top: 7px solid rgb(139, 137, 0); /* add a solid black border at the top with 7px thickness */
+    border-left: 7px solid rgb(0, 0, 255); /* add a solid black border at the left with 7px thickness */
+    border-right: 7px solid rgb(0, 255, 0); /* add a solid black border at the right with 7px thickness */
+    border-radius: 15px;
+}
+
+#boxfirst{
+    text-shadow: 5px 10px 1px rgb(190, 55, 55); 
+    /* first element : shadow moving to the right
+    second element : shadow moving downwards
+    third element : blur radius
+    fourth element : shadow color */
+}
+
+#boxsecond{
+    width: 100px; /* set width to 100 pixels */
+    height: 100px; /* set height to 100 pixels */
+    background-color: rgb(55, 190, 55); /* set background color */
+    box-shadow: 3px 3px 5px rgb(74, 16, 209);
+}
+
+#test_margin{
+    border: 15px solid rgb(0, 0, 0);
+    font-size: 5em;
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+    margin-top: 50px;
+}
+
+#test_margin2{
+    margin: 10px;
+    border: 10px solid rgb(60, 1, 100);
+    font-size: 5em;
+    width: 250px;
+    height: 150px;
+    background-color: brown;
+    margin: auto;
+}
+
+#img1{
+    float: left;
+    margin-right:10px
+}
+
+#img2{
+    float: right;
+    margin-left:10px
+}
+
+#overflow_test{
+    width: 200px;
+    height: 75px;
+    border: 2px solid black;
+    overflow: clip; /* add scrollbars if content overflows */
+    overflow-clip-margin: 13px;
+    /* visible : overflow */
+    /* hidden : any content will be hidden (but copying = ok) */
+    /* clip : will overflow by n px (overflow-clip-margin property), similar to hidden */
+    /* scroll : add scrollbars if content overflows */
+    /* auto : add scrollbars only if necessary */
+}
+
+#test_div_div{
+    background-color: lightblue;
+    width: 100px;
+}
+
+#test_span_span{
+    background-color: cyan; /* make the span behave like a block element */
+}
