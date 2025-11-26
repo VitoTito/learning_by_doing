@@ -58,6 +58,7 @@
 - `<form> </form>` : creating a form
 - `<label> </label>` : for form : label associated to a text field
 - `<input> </input>` : for form : interactive field in a form
+- `<nav> </nav>` : navbar, section of navigation links
 
 
 ## Main elements of CSS
@@ -134,11 +135,122 @@
     - Very powerful for full-page or component layouts  
 
 
-  - `position` : static, relative, absolute, fixed, sticky
+- `position` : defines how an element is positioned in the page. Common values:
+
+1. **static** (default)
+    - The element follows the **normal flow** of the page.
+    - `top`, `left`, `right`, `bottom` have **no effect**.
+
+2. **relative**
+    - The element is **positioned relative to its normal position**.
+    - `top`, `left`, `right`, `bottom` **move it from where it would normally be**.
+    - Space for the element is still preserved in the flow.
+
+3. **absolute**
+    - The element is **removed from the normal flow**.
+    - Positioned relative to the **closest ancestor with position other than static**.
+    - Can use `top`, `left`, `right`, `bottom`.
+
+4. **fixed**
+    - The element is **removed from the flow** and stays **fixed relative to the viewport**.
+    - Doesn’t move when scrolling.
+    - IMPORTANT for anything that **MUST STAY VISIBLE AT SCREEN**
+
+5. **sticky**
+    - The element behaves **like relative until it reaches a threshold**, then **sticks** like fixed.
+    - Useful for sticky headers or sidebars.
+
   - `top`, `right`, `bottom`, `left` : coordinates for positioned elements
   - `z-index` : layer order
   - `float` : allows elements to float left or right (old layout method)
   - `overflow` : controls what happens when content exceeds its box (visible, hidden, clip, scroll, auto)
+
+
+- **Combinators / descendant / child / sibling selectors** : allow targeting elements based on their relation to others.
+
+  1. **Descendant selector (space)**  
+     - Targets all elements inside a parent, at any depth.  
+     - Syntax: `div p { ... }` → all `<p>` inside `<div>`  (`<div> <p> <p> <p>` for instance)
+     ```css
+     div p {
+       color: blue;
+     }
+     ```
+
+  2. **Child selector (`>`)**  
+     - Targets only direct children of a parent.  
+     - Syntax: `div > p { ... }` → only `<p>` that are **direct children** of `<div>`  
+     ```css
+     div > p {
+       color: red;
+     }
+     ```
+
+  3. **Adjacent sibling selector (`+`)**  
+     - Targets the element immediately **after** another.  
+     - Syntax: `h1 + p { ... }` → the first `<p>` after `<h1>`  
+     ```css
+     h1 + p {
+       font-weight: bold;
+     }
+     ```
+
+  4. **General sibling selector (`~`)**  
+     - Targets all siblings that come **after** an element.  
+     - Syntax: `h1 ~ p { ... }` → all `<p>` after `<h1>` on the same level  
+     ```css
+     h1 ~ p {
+       color: gray;
+     }
+     ```
+
+- **Pseudo-classes**: allow you to style elements based on **state, position, or interaction**, without adding extra classes or JavaScript.
+
+1. **`:hover`**  
+   - Applies styles when the user **hovers over an element** with the mouse.  
+
+2. **`:active`**
+   - Applies styles when the **element is being clicked or activated**
+
+3. **`:focus`**
+   - Targets **elements that are focused**, usually via **keyboard or input click**.
+
+4. **`:first-child / :last-child`**
+   - Target the **first** or **last child of a parent element**
+
+5. **`:nth-child(n)`**
+   - Target the **nth child (1-based) of a parent element**
+
+6. **`:not(selector)`**
+   - Selects elements that **do NOT match the given selector.**
+
+
+- **Pseudo-elements**: target **specific parts of an element** or insert content without extra HTML.
+
+
+1. **`::before`**
+   - Inserts content **before** an element’s content.
+   - Must use the `content` property.
+
+2. **`::after`**
+   - Inserts content after an element’s content.
+
+3. **`::first-letter`**
+   - Inserts content after an element’s content.
+
+4. **`::first-line`**
+   - Styles the first letter of a block element.
+
+5. **`::selection`**
+   - Styles the text selected by the user (highlighted with mouse/keyboard).
+
+6. **`::placeholder`**
+   - Styles the placeholder text of input fields
+
+- **Pagination**: method by which a document is separated into pages, and number are given.
+
+- **Dropdown menus**
+
 
 - **Flexbox / Grid**:
   - `display: flex` / `display: grid` : 
@@ -154,3 +266,7 @@
   - `transform` : rotate, scale, translate
   - `transition` : smooth changes
   - `animation` : keyframe animations
+
+  - **Responsive CSS**
+  
+  - **Fontawesome** (for logos to upload)

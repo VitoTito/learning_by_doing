@@ -1,0 +1,57 @@
+@font-face {
+    src: url(fonts/Kedebideri-Regular.ttf); /* specify the font file location */
+    font-family: "Kedebideri"; /* assign a name to the font */
+}
+
+*{
+    box-sizing: border-box; /* include padding and border in element's total width and height */
+}
+
+body{  
+    font-family:"Kedebideri", sans-serif; /* set default font for the page */
+    margin:0; /* remove default margin */
+}
+
+header{
+    background-color: rgb(100, 93, 93); /* set background color for the header */
+    text-align: center; /* center align text in the header */
+    padding: 15px
+}
+
+.navbar{
+    overflow: hidden; /* clear floats */
+    background-color: rgb(41, 6, 6); /* set background color for the navbar */
+    height: 50px; /* set height for the navbar */
+}
+
+aside{
+    width: 20%; /* set width for the sidebar */
+    float: left; /* float the sidebar to the left */
+    padding: 10px; /* add padding inside the sidebar */
+}
+
+section{
+    width: 40%; /* set width for the sidebar */
+    float: left; /* float the sidebar to the left */
+    padding: 10px; /* add padding inside the sidebar */
+}
+
+article{
+    width: 40%; /* set width for the sidebar */
+    float: left; /* float the sidebar to the left */
+    padding: 10px; /* add padding inside the sidebar */
+}
+
+footer{
+    display: block; /* make footer a block element */
+    clear: both; /* clear floats */
+    background-color: rgb(133, 67, 255); /* set background color for the header */
+    text-align: center; /* center align text in the header */
+    padding: 25px;
+}
+@media screen and (max-width: 600px) {
+    aside, section, article {
+        width: 100%; /* set width to 100% for smaller screens */
+        float: none; /* remove float for smaller screens */
+    }
+}

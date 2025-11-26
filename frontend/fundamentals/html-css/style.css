@@ -8,6 +8,11 @@ body{
     background-color: slategray; /* set background color for the page */
     border: 3px solid black; /* add a solid black border with 3px thickness */
     display: flow-root; /* establish a new block formatting context */
+    background-image:url(assets/bliss.jpg);
+    background-repeat: no-repeat; /* prevent the background image from repeating */
+    background-position: center; /* center the background image */
+    background-attachment: fixed; /* make the background image fixed during scrolling */
+    background-size: cover; /* scale the background image to cover the entire viewport */
 }
 
 #pi{
@@ -117,8 +122,266 @@ body{
 #test_div_div{
     background-color: lightblue;
     width: 100px;
+    height: 100px;
+    display: block; /* make the div behave like a block element (useless) */
 }
 
 #test_span_span{
     background-color: cyan; /* make the span behave like a block element */
+    height: 100px; /* set height to 100 pixels : DOES NOT APPLY (inline) */
+}
+
+#test_span_span_no{
+    background-color: cyan; /* make the span behave like a block element */
+    height: 100px; /* set height to 100 pixels : DOES NOT APPLY (inline) */
+    display: none;
+}
+
+.container{
+    background-color: rgb(255, 249, 249);
+    height: 88vh; /* set height to 100% of the viewport height */
+}
+
+.box{
+    border: 5px solid black;
+    box-sizing: border-box; /* include border and padding in the element's total width and height */
+    padding: 25px;
+    height: auto;
+    width: 50%;
+    float:left;
+    text-align: center;
+    max-width: 50%;
+}
+
+#box__1{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(0, 0, 255);
+    position: fixed; /* set position to fixed */
+    left:0px;
+    bottom: 10px;
+    /*left: 150px;  move the box 100 pixels down from its normal position */
+}
+
+#box__2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 255);
+    position: sticky; /* set position to fixed */
+    top:100px
+}
+
+#box__3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 128, 11);
+    position: absolute; /* set position to fixed */
+    top:50px;
+    left:50px;
+}
+
+#contain{
+    border: 2px solid black;
+}
+
+#contain > p{  /* direct child selector */
+    background-color: yellow;
+}
+
+#contain ~ p{  /* general sibling selector */
+    background-color: green;
+}
+
+button:hover{
+    font-size: 1.1em;
+    background-color: rgb(0, 99, 13); /* change background color on hover */
+}
+
+button:active{
+    font-size: 1.1em;
+    background-color: #012b00; /* change background color on hover */
+}
+
+a:link{
+    color: rgb(9, 255, 83); /* color for unvisited link */
+}
+
+a:hover{
+    color: rgb(104, 76, 0); /* color when hovering over link */
+    font-size: 1.1em;
+}
+
+a:active{
+    color: rgb(236, 15, 82); /* color when hovering over link */
+    font-size: 1.2em;
+}
+
+/*li:hover{
+    background-color: rgb(214, 37, 37); /* change background color on hover */
+/*}
+
+/* li:not(:hover){
+    background-color: rgb(255, 255, 255); /* change background color on hover */
+/* } */
+
+li:nth-child(n+7){
+    background-color: rgb(113, 11, 122); /* background color for odd list items */
+}
+
+#greeting p{
+    background-color: rgb(7, 62, 124);
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}
+
+h2::first-letter{
+    color: red;
+    font-size: 2em;
+}
+
+p::first-line{
+    background-color: yellow;
+}
+
+p::selection{
+    color: rgb(45, 136, 8);
+    background-color: rgb(36, 39, 37);
+}
+
+#fruit li::before{
+    content: "❤❤❤"; /* add heart emojis before each list item */
+}
+
+#apple::after{
+    content: " 🍎"; /* add an apple emoji after the apple list item */
+}
+
+#banana::after{
+    content: " 🍌"; /* add a banana emoji after the banana list item */
+}
+
+#orange::after{
+    content: " 🍊"; /* add an orange emoji after the orange list item */
+}
+
+#fruit li::marker{
+    content: "+"; /* change the list item marker to a plus sign */
+    color: rgb(55, 189, 21);
+    font-size: 1.2em;
+}
+
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.pagination a.active{
+    background-color: rgb(1, 212, 72);
+    font-weight: bold;
+    border-radius: 5px
+}
+
+.pagination a:hover:not(.active){
+    background-color: rgb(25, 220, 255);
+    color: white;
+    border-radius: 5px
+}
+
+.dropdown button{
+    background-color: rgb(0, 123, 255);
+    color: white;
+    padding: 10 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown .content{
+    display: none;
+    background-color: #e7e7e7;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #00000033;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+    background-color: rgb(236, 0, 98);
+}
+
+.dropdown a:hover{
+    background-color: rgb(152, 248, 27);
+}
+
+.navbar ul{
+    list-style-type: none; /* remove default list styling */
+    background-color: rgb(0, 123, 255);
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.navbar a:hover{
+    background-color: rgb(7, 4, 185);
+}
+
+.navbar li{
+    float: left; /* arrange list items horizontally */
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid rgb(168, 160, 160);
+    margin: 10px;
+    width: 150px;
+}
+
+.gallery .description{
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.gallery:hover{
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 15px rgb(100, 100, 100);
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* ensure the image covers the entire area without distortion */
+}
+
+.logo {
+  height: auto;      /* garde les proportions */
+  fill: #1DA1F2;     /* couleur du SVG */
 }
